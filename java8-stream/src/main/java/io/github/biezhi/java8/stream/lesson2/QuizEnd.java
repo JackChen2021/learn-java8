@@ -92,10 +92,12 @@ public class QuizEnd {
                 .anyMatch(trader -> trader.getCity().equals("Milan"));
 
         // 06
-        transactions.stream()
+        Integer reduce = transactions.stream()
                 .filter(transaction -> transaction.getTrader().getCity().equals("Cambridge"))
                 .map(Transaction::getValue)
                 .reduce(0, Integer::sum);
+        System.out.println(reduce);
+
 
         // 07
         transactions.stream()

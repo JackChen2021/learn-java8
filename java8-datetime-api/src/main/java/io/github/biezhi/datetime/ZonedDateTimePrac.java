@@ -10,7 +10,7 @@ import java.time.ZonedDateTime;
  * @author biezhi
  * @date 2018/3/2
  */
-public class ZonedDateTimeExample {
+public class ZonedDateTimePrac {
 
     public static void main(String[] args) {
         // 创建一个ZonedDateTime实例
